@@ -11,6 +11,10 @@ Client.on('message', (message) => {
     if (message.content.includes('ok') && message.author.username != Client.user.username) {
         message.channel.send('alaaaaaa dijo ok')
     }
+
+    if (message.content.includes('oc') && message.author.username != Client.user.username) {
+        message.channel.send('alaaaaaa dijo oc')
+    }
 })
 
 Client.login(process.env.TOKEN);
